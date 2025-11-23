@@ -5,14 +5,12 @@ header { background-color: #002171;
        color: #FFFFFF;
        font-family: Arial, Georgia, sans-serif; }
  h1 {  line-height: 200%;}
-h2 { background-color: #B0E6E6; 
-     color: #1976D2; 
+h2 { color: #1976D2;
 	 font-family: Georgia, serif;  }
 nav { font-weight: bold;
-        background-color: #BBDEFB; 
-       }
+        background-color: #BBDEFB;  }
 
-DT { color: #002171; 
+dt { color: #002171; 
       font-weight: bold; }
 .resort { color: #1976D2;
           font-size: 1.2em; }
