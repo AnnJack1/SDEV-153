@@ -1,0 +1,126 @@
+body { 
+       background-color: #EAEAEA;
+       color: #666666;
+       font-family: Arial, Verdana, sans-serif;
+       background-repeat: no-repeat;
+       background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+}
+
+main {
+       background-color: #FFFFFF;
+       margin-left: 170px;
+       padding-left: 2em;
+       padding-right: 2em;
+       overflow: auto;
+       display: block;
+}
+
+header { 
+       background-color: #002171; 
+       color: #FFFFFF;
+       font-family: Georgia, sans-serif;
+       background-image: url(sunset.jpg);
+       background-position: right;
+       background-repeat: no-repeat;
+       height: 120px;
+}
+
+h1 {  
+       font-size: 3em;
+       letter-spacing: 0.25em;
+       text-align: center;
+       padding-top: .5em;
+       margin: 0;
+}
+
+h2 { 
+       color: #1976D2;
+       font-family: Georgia, serif;
+}
+
+nav { 
+       width: 160px;
+       font-size: 1.2em;
+       padding: 0;
+       position: fixed;
+}
+
+nav a:link { color: #5C7FA3; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #A52A2A; }
+
+nav ul {
+       list-style-type: none;
+       padding-left: 1em;
+}
+
+dt { 
+       color: #002171; 
+       font-weight: bold; 
+}
+
+.resort { 
+       color: #1976D2;
+       font-size: 1.2em; 
+}
+
+footer { 
+       background-color: #FFFFFF;
+       margin-left: 170px;
+       text-align: center;
+       font-size: .70em;
+       font-style: italic;
+       padding: 1em;
+}
+
+#wrapper {
+       background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+       min-width: 960px;
+       max-width: 2048px;
+       width: 80%;
+       margin-right: auto;
+       margin-left: auto;
+       box-shadow: 5px 5px 5px #828282;
+}
+
+#homehero {
+       background: url(coast.jpg) no-repeat;
+       background-size: 100% 100%;
+       margin-left: 170px;
+       height: 300px;
+}
+
+#yurthero {
+       background: url(yurt.jpg) no-repeat;
+       background-size: 100% 100%;
+       margin-left: 170px;
+       height: 300px;
+}
+
+#trailhero {
+       background: url(trail.jpg) no-repeat;
+       background-size: 100% 100%;
+       margin-left: 170px;
+       height: 300px;
+}
+
+section {
+       float: left;
+       width: 33%;
+       padding-left: 2em;
+       padding-right: 2em;
+}
+
+header a:link,
+header a:visited {
+       color: #FFFFFF;
+       text-decoration: none;
+}
+
+header a:hover {
+       color: #90C7E3;
+}
+
+* {
+       box-sizing: border-box;
+}
