@@ -1,17 +1,16 @@
 body { 
-       background-color: #EAEAEA;
+       background-color: #90C7E3;
        color: #666666;
        font-family: Arial, Verdana, sans-serif;
-       background-repeat: no-repeat;
-       background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+       margin: 0;
+       padding: 0;
 }
 
 main {
-       background-color: #FFFFFF;
-       margin-left: 170px;
-       padding-left: 2em;
-       padding-right: 2em;
-       overflow: auto;
+       padding-left: 1em;
+       padding-right: 1em;
+       padding-top: 0;
+       padding-bottom: 0;
        display: block;
 }
 
@@ -22,14 +21,12 @@ header {
        background-image: url(sunset.jpg);
        background-position: right;
        background-repeat: no-repeat;
-       height: 120px;
+       padding: 1em;
 }
 
 h1 {  
-       font-size: 3em;
-       letter-spacing: 0.25em;
+       font-size: 1.5em;
        text-align: center;
-       padding-top: .5em;
        margin: 0;
 }
 
@@ -39,10 +36,9 @@ h2 {
 }
 
 nav { 
-       width: 160px;
        font-size: 1.2em;
-       padding: 0;
-       position: fixed;
+       text-align: center;
+       background-color: #FFFFFF;
 }
 
 nav a:link { color: #5C7FA3; }
@@ -51,12 +47,16 @@ nav a:hover { color: #A52A2A; }
 
 nav ul {
        list-style-type: none;
-       padding-left: 1em;
+       margin: 0;
+       padding-left: 0;
+       display: flex;
+       flex-direction: column;
 }
 
-dt { 
-       color: #002171; 
-       font-weight: bold; 
+nav li {
+       padding: .5em 1em;
+       width: 100%;
+       border-bottom: 1px solid #CCCCCC;
 }
 
 .resort { 
@@ -66,49 +66,41 @@ dt {
 
 footer { 
        background-color: #FFFFFF;
-       margin-left: 170px;
        text-align: center;
        font-size: .70em;
        font-style: italic;
        padding: 1em;
 }
 
-#wrapper {
-       background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
-       min-width: 960px;
-       max-width: 2048px;
-       width: 80%;
-       margin-right: auto;
-       margin-left: auto;
-       box-shadow: 5px 5px 5px #828282;
-}
-
 #homehero {
        background: url(coast.jpg) no-repeat;
-       background-size: 100% 100%;
-       margin-left: 170px;
+       background-size: 200% 100%;
        height: 300px;
 }
 
 #yurthero {
        background: url(yurt.jpg) no-repeat;
-       background-size: 100% 100%;
-       margin-left: 170px;
+       background-size: 200% 100%;
        height: 300px;
 }
 
 #trailhero {
        background: url(trail.jpg) no-repeat;
-       background-size: 100% 100%;
-       margin-left: 170px;
+       background-size: 200% 100%;
        height: 300px;
 }
 
 section {
-       float: left;
-       width: 33%;
-       padding-left: 2em;
-       padding-right: 2em;
+       padding-left: .5em;
+       padding-right: .5em;
+}
+
+#mobile {
+       display: inline;
+}
+
+#desktop {
+       display: none;
 }
 
 header a:link,
@@ -123,4 +115,67 @@ header a:hover {
 
 * {
        box-sizing: border-box;
+}
+
+/* -------- Medium layout 600px+ -------- */
+@media (min-width: 600px) {
+
+       h1 {
+              font-size: 2em;
+              letter-spacing: .25em;
+       }
+
+       nav ul {
+              flex-direction: row;
+              flex-wrap: nowrap;
+              justify-content: space-around;
+              padding-right: 2em;
+       }
+
+       nav li {
+              width: 12em;
+              border-bottom: none;
+       }
+
+       section {
+              padding-left: 2em;
+              padding-right: 2em;
+       }
+
+       #flow {
+              display: flex;
+              flex-direction: row;
+       }
+
+       #mobile { display: none; }
+       #desktop { display: inline; }
+
+       #homehero,
+       #yurthero,
+       #trailhero {
+              background-size: 100% 100%;
+       }
+}
+
+/* -------- Large layout 1024px+ -------- */
+@media (min-width: 1024px) {
+
+       body {
+              background-image: linear-gradient(
+                     to bottom,
+                     #FFFFFF 20%,
+                     #90C7E3 60%,
+                     #FFFFFF 100%
+              );
+       }
+
+       nav ul {
+              padding-left: 10%;
+              padding-right: 10%;
+       }
+
+       #wrapper {
+              width: 80%;
+              margin: auto;
+       }
 }
