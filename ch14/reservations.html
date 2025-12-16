@@ -65,17 +65,5 @@
 
 </div>
 
-<script>
-document.querySelector("form").addEventListener("submit", function(event) {
-    const phone = document.getElementById("myPhone").value;
-    const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
-
-    if (!phonePattern.test(phone)) {
-        alert("Please enter the phone number in xxx-xxx-xxxx format.");
-        event.preventDefault();
-    }
-});
-</script>
-
 </body>
 </html>

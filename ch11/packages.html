@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pacific Trails Resort :: Trip Packages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="pacific.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">Pacific Trails Resort</a></h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+
+    <main>
+        <h2>Choose Your Trip Package</h2>
+
+        <form>
+            <label>
+                <input type="checkbox" value="300">
+                Weekend Getaway ($300)
+            </label><br>
+
+            <label>
+                <input type="checkbox" value="500">
+                Adventure Package ($500)
+            </label><br>
+
+            <label>
+                <input type="checkbox" value="800">
+                Luxury Retreat ($800)
+            </label><br><br>
+
+            <input type="button" value="Calculate Total" onclick="calculateTotal()">
+        </form>
+    </main>
+
+    <footer>
+        Copyright © 2020 Pacific Trails Resort<br>
+        <a href="mailto:emma@jackson.com">emma@jackson.com</a>
+    </footer>
+
+</div>
+
+<script>
+function calculateTotal() {
+    let total = 0;
+    const packages = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    packages.forEach(function(pkg) {
+        total += Number(pkg.value);
+    });
+
+    alert("Total cost: $" + total);
+}
+</script>
+
+</body>
+</html>
