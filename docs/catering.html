@@ -1,56 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackstone Grill - Catering</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Request catering services from Blackstone Grill for events, parties, and gatherings.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catering | Blackstone Grill Food Truck</title>
+<meta name="description" content="Book Blackstone Grill catering services for parties, events, and gatherings featuring fresh food and homemade desserts.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="site-wrapper">
 
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="claudias-cookies.html">Claudia's Cookies</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="catering.html">Catering</a></li>
-        <li><a href="about.html">About Us</a></li>
-    </ul>
+<div class="nav-inner">
+<img src="logo.png" alt="Blackstone Grill logo" class="logo">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="claudias-cookies.html">Claudia's Cookies</a></li>
+<li><a href="locations.html">Locations</a></li>
+<li><a href="catering.html">Catering</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
 </nav>
 
 <main>
-    <h1>Catering Services</h1>
+<h1 style="text-align:center;">Catering Services</h1>
 
-    <p>
-        Blackstone Grill offers catering services for events, parties, and special occasions.
-        Please fill out the form below to request catering information.
-    </p>
+<p style="text-align:center;">
+Perfect for parties, events, and special gatherings.
+</p>
 
-    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+<div class="section-box">
+<table>
+<tr>
+<th>Package</th>
+<th>Details</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>Classic Grill</td>
+<td>Burgers & fries (25 guests)</td>
+<td>$450</td>
+</tr>
+<tr>
+<td>Family Feast</td>
+<td>Meals & desserts (40 guests)</td>
+<td>$700</td>
+</tr>
+</table>
+</div>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+<h2 style="text-align:center;">Request Catering</h2>
 
-        <label for="event">Event Type:</label><br>
-        <input type="text" id="event" name="event"><br><br>
-
-        <label for="guests">Number of Guests:</label><br>
-        <input type="number" id="guests" name="guests"><br><br>
-
-        <label for="message">Additional Details:</label><br>
-        <textarea id="message" name="message" rows="4"></textarea><br><br>
-
-        <input type="submit" value="Submit Request">
-    </form>
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="details" placeholder="Event details" required></textarea>
+<input type="submit" value="Submit Request">
+</form>
 </main>
 
 <footer>
-    <p>© 2025 Blackstone Grill</p>
+<p>© 2025 Blackstone Grill</p>
 </footer>
 
+</div>
 </body>
 </html>
