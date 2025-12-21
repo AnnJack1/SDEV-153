@@ -32,8 +32,8 @@ nav {
 .logo {
     width: 60px;
     height: auto;
+    border-radius: 12px;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -160,7 +160,33 @@ footer {
     text-align: center;
     padding: 20px;
 }
+.menu-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.about-image {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+.menu-table {
+    background-color: #f0e6de;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.menu-table th {
+    background-color: #c49a6c;
+    color: white;
+}
+
+.menu-table td {
+    background-color: #fffaf5;
+}
 @media (max-width: 768px) {
     .nav-inner {
         flex-direction: column;
